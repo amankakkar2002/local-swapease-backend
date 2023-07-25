@@ -1,0 +1,7 @@
+npm init -y
+
+change json name
+
+npm i express
+
+nodemon app.js // to run js file in terminal
