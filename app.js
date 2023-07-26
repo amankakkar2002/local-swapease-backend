@@ -13,25 +13,7 @@ app.use(express.json());
 // to link the router file to route the path easily
 app.use(require('./router/auth'));
 
-const PORT=process.env.PORT;
-
-//Middleware
-
-// const middleware=(req,res,next)=>
-// {
-//     console.log("Hello, I am middleware");
-//     next();
-// }
-
-// app.get('/home',(req,res)=>
-// {
-//     res.send('Hello at 3000');
-// })
-
-// app.get('/login',(req,res)=>
-// {
-//     res.send('Hello at login');
-// })
+const PORT=process.env.PORT || 5000;
 
 app.get('/signup',(req,res)=>
 {
